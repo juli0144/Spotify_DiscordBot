@@ -30,9 +30,9 @@ It is ment to be used in an empty channel which also prevents from intercepting 
 
 Ensure you have Python 3.7+ installed, then install the required dependencies by running the following command:
 
-\```bash
+~~~
 pip install -r requirements.txt
-\```
+~~~
 
 ### Step 2: Edit the `spotifybot.ini` file
 
@@ -48,9 +48,9 @@ You will need to get ID's from your Server, the desired Channel and a User. To g
 
 To run the bot, simply execute the `main.py` file:
 
-\```bash
+~~~
 python main.py
-\```
+~~~~
 
 Once the bot is running, it will automatically connect to Discord and Spotify using the credentials specified in the `config.conf` file. The bot will start responding to commands in the designated Discord channel. 
 
@@ -68,10 +68,10 @@ The following Python packages are required for the bot to function:
 
 These dependencies are automatically installed via the `requirements.txt` file, which includes:
 
-\```
-spotipy==2.21.0
-discord.py==1.7.3
-\```
+
+spotipy
+discord.py
+
 
 You can install the dependencies manually using `pip` if necessary.
 
@@ -85,17 +85,17 @@ The bot supports several commands:
 Searches for songs on Spotify and returns a list of results. You can specify the number of results (default is 5, up to 10) to be returned.
 
 Example:
-\```
+~~~
 !search Shape of You
-\```
+~~~
 
 ### `!add <song_name>`
 Adds the first song from the search results to the queue.
 
 Example:
-\```
+~~~
 !add Blinding Lights
-\```
+~~~
 
 ### `!queue`
 If autodelete of messages is off creates a new message to show queue.
